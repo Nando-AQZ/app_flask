@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSolutions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='img/icono.png') }}">
+    
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Inicio</a></li>
+                <li><a href="{{ url_for('about') }}">Quiénes Somos</a></li>
+                <li><a href="{{ url_for('services') }}">Servicios</a></li>
+                <li><a href="{{ url_for('news') }}">Noticias</a></li>
+                <li><a href="{{ url_for('contact') }}">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>Síguenos: </p>
+        
+            <a href="https://github.com" > <img src="{{ url_for('static', filename='img/github.png') }}" alt=""></a>
+            <a href="https://www.linkedin.com">  <img src="{{ url_for('static', filename='img/linkedin.png') }}" alt=""></a>
+            <a href="https://www.twitter.com"><img src="{{ url_for('static', filename='img/twitter.png') }}" alt=""></a>
+        
+    </footer>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section>
+    <h2>Noticias</h2>
+    <article>
+        <h3>Nuevo Software Lanzado</h3>
+        <img src="{{ url_for('static', filename='img/img1.jpg') }}" alt="Noticia1" class="img">
+        <p>TechSolutions lanza un nuevo software que promete revolucionar el mercado.</p>
+    </article>
+    <article>
+        <h3>Evento de Ciberseguridad</h3>
+        <img src="{{ url_for('static', filename='img/img2.jpg') }}" alt="Noticia2">
+        <p>Participa en nuestro próximo evento sobre ciberseguridad.</p>
+    </article>
+</section>
+{% endblock %}

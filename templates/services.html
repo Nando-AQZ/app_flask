@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section>
+    <h2>Servicios</h2>
+    <h3>Servicio1</h3>
+        <img src="{{ url_for('static', filename='img/img3.jpg') }}" alt="Servicio1" class="img">
+        
+        <p>Desarrollo de Software:</p>
+        <p> Proveemos desarrollo de software a medida, adaptado a las necesidades específicas de tu negocio.</p>
+        
+    
+    <h3>Servicio2</h3>
+        <img src="{{ url_for('static', filename='img/img4.jpg') }}" alt="Servicio2">
+        
+        <p>Ciberseguridad:</p>
+        <p> Protege tus datos con nuestros avanzados servicios de ciberseguridad.</p>
+        
+    
+</section>
+{% endblock %}

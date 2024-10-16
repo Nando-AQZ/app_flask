@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="container">
+    <h2>Contacto</h2>
+    <form method="post">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+    <div>
+        <p>Dirección: Calle 4 , Ciudad La Paz</p>
+        <p>Teléfono: 68094884</p>
+        <p>Correo: contacto@TechSolutions.com</p>
+        <div id="mapa">
+            
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.3775772949193!2d-68.16495282597873!3d-16.507025040904054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915edf003dd835f9%3A0xb619f94a08a07a51!2sCeja%20el%20Alto!5e0!3m2!1ses!2sbo!4v1728967934667!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>>
+            
+        </div>
+    </div>
+</section>
+{% endblock %}
